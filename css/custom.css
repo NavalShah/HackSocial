@@ -158,7 +158,15 @@ header, section {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -518,39 +526,44 @@ p {
 /* ---- Button css ---- */
 .btn-primary {
   background-color: rgba(240, 176, 54);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
   color: black;
   margin: 0 8px;
   font-family: "SubBtnText";
   font-size: 1.5rem;
   text-transform: none;
-  letter-spacing: 0px;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .btn-primary:hover {
-  background-color: rgba(240, 176, 54, 0.5);
+  background-color: rgba(240, 176, 54, 0.9);
   color: black;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-decoration: none;
 }
 
 .btn-primary:focus {
-  background-color: rgba(240, 176, 54, 0.3) !important;
-  color: #888;
+  background-color: rgba(240, 176, 54, 0.8) !important;
+  color: black;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(240, 176, 54, 0.5);
 }
 
 .btn-primary:active {
-  background-color: rgba(240, 176, 54, 0.5) !important;
-  color: #888 !important;
+  background-color: rgba(240, 176, 54, 1) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2) !important;
+  color: black !important;
 }
 
 /* ---- Description text ---- */
 .text-white-50 {
   color: white !important;
-}
-
-.card {
-  border-radius: 50px;
 }
 
 #inputEmail {
