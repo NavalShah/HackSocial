@@ -3,7 +3,8 @@
     "allow": [
       "Bash(grep:*)",
       "Bash(sed:*)",
-      "Bash(find:*)"
+      "Bash(npm install *)",
+      "Bash(npm start *)"
     ],
     "deny": []
   }
