@@ -6,3 +6,20 @@
 .idea/workspace.xml
 .idea/misc.xml
 node_modules
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# npm debug
+npm-debug.log*
+
+# Yarn
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
